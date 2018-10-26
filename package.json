@@ -1,7 +1,7 @@
 {
   "name": "boilerplate-react",
   "version": "1.0.0",
-  "description": "Skeleton React Asparindo",
+  "description": "Skeleton React",
   "scripts": {
     "analyze": "source-map-explorer build/static/js/main.*",
     "build-css": "node-sass-chokidar src/ -o src/",
