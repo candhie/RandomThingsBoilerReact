@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Container } from 'reactstrap';
-import HomeComponent from '../components/Home';
+import UserComponent from '../components/User';
 import actions from '../actions/index';
 
-class Home extends Component {
+class User extends Component {
 	render() {
-		console.log('-----------------------');
-		console.log(this.props.user);
 		return (
 			<div id="home">
 				<Container>
-					<HomeComponent 
+					<UserComponent 
 						{...this.props}
 					/>
 				</Container>
@@ -34,9 +32,9 @@ const mapStateToProps = (state) => {
 	});
 }
 
-const HomeContainer = connect(
+const UserContainer = connect(
 	mapStateToProps, 
 	mapDispatchToProps
-)(Home);
+)(User);
 
-export default HomeContainer;
+export default UserContainer;

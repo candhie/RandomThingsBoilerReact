@@ -1,5 +1,6 @@
-import { addUser } from './userActions';
+import { addUser, updateUser } from './userActions';
 
 export default {
-  addUser
+  addUser,
+  updateUser,
 }

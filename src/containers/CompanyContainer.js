@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Container } from 'reactstrap';
-import HomeComponent from '../components/Home';
+import CompanyComponent from '../components/Company';
 import actions from '../actions/index';
 
-class Home extends Component {
+class Company extends Component {
 	render() {
-		console.log('-----------------------');
-		console.log(this.props.user);
 		return (
 			<div id="home">
 				<Container>
-					<HomeComponent 
+					<CompanyComponent 
 						{...this.props}
 					/>
 				</Container>
@@ -34,9 +32,9 @@ const mapStateToProps = (state) => {
 	});
 }
 
-const HomeContainer = connect(
+const CompanyContainer = connect(
 	mapStateToProps, 
 	mapDispatchToProps
-)(Home);
+)(Company);
 
-export default HomeContainer;
+export default CompanyContainer;
